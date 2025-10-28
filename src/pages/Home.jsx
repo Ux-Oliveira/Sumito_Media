@@ -205,7 +205,10 @@ export default function Home() {
             </h3>
               <h3 id="new-mobile" className="mobile-only mobile-text text-2xl font-semibold">
               Sumito Media | Meme Scholar  Vending Machines Aficionado  Father | Husband
-            </h3>
+               <h6 id="plug" className="mobile-only mobile-text text-2xl font-semibold">
+              Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
+            </h6>
+              </h3>
             <h6 id="plug" className="text-2xl font-semibold">
               Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
             </h6>
@@ -229,6 +232,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
