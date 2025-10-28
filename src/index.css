@@ -1,4 +1,4 @@
-@import "tailwindcss";
+  - @import "tailwindcss";
 
 html, body, #root {
   height: 100%;
@@ -212,7 +212,7 @@ section#home video {
 #socials {
   position: relative;
   overflow: hidden;
-  background-color: #000;
+  background-color: transparent; /* FIX 1: remove black background */
 }
 
 #socials img {
@@ -289,6 +289,13 @@ color: salmon;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
+
+  /* FIX 2: make icons appear in 2 rows of 3 */
+  #socials .social-icons-fixed a {
+    flex: 1 1 calc(33.33% - 1rem);
+    text-align: center;
+  }
+
   #socials a {
     font-size: 2rem;
   }
@@ -313,8 +320,15 @@ color: salmon;
     transform: none;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2rem;
-    width: auto;
+    flex-wrap: wrap; /* FIX 3: allow wrapping for 2x3 grid */
+    margin-top: 0.5rem; /* FIX 4: bring closer to text */
+    width: 100%;
+  }
+
+  /* FIX 5: bring Rick’s text closer to Sumito line */
+  #socials #new-mobile {
+    margin-top: -0.25rem !important;
+    margin-bottom: 0.25rem !important;
   }
 }
 
