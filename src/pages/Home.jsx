@@ -204,7 +204,7 @@ export default function Home() {
               Sumito Media | Meme Scholar - Vending Machines Aficionado - Father - Husband
             </h3>
             <div><h6 className="text-2xl font-semibold">
-              Website by <a style="font-size: 10px" id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
+              Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
             </h6></div>
           </div>
           <div id="socialicons" className="social-icons-fixed">
@@ -226,6 +226,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
