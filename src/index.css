@@ -338,3 +338,18 @@ color: salmon;
     font-size: 5px;
   }
 }
+
+@media (max-width: 768px) {
+#new-mobile {
+  
+}
+}
+
+/*Hide desktop text on mobile*/
+@media (max-width: 768px) {
+  #new-mobile {
+  .desktop-only-text {
+    display: none !important;
+  }
+  }
+}
