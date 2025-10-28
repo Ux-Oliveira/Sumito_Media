@@ -17,7 +17,7 @@ export default function VendingMachine() {
     B4: { img: "/award_b-4.png", sound: "/right.mp3", text: "You did it again, bozo" },
     C3: { img: "/job_c-3.png", sound: "/lion.mp3", text: "*trigger warning*" },
     D6: { img: "/intoam_d-6.png", sound: "/right.mp3", text: "You found 10% off of your first Into The AM purchase!", link: "https://IntoTheAm.com/Sumito" },
-    E2: { img: "/monet_e-2.png", sound: "/right.mp3", text: "There you go! Don't drink it at once!" },
+    E2: { img: "/monet_e-2.png", sound: "/right.mp3", text: "There you go! Don't drink it all at once!" },
     F5: { img: "/evangelion_f-5.png", sound: "/jorking.mp3", text: "Straight up?" },
   };
 
@@ -216,3 +216,4 @@ export default function VendingMachine() {
     </div>
   );
 }
+
