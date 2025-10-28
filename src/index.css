@@ -84,16 +84,14 @@ section#home video {
 .text-right { right: -5rem; }
 
 /*Hide desktop text on mobile*/
-@media (max-width: 768px) {
-  .text-left,
-  .text-right,
-  .desktop-only-text {
-    display: none !important;
-  }
-}
+.desktop-only-text { display: block; }
+.mobile-only { display: none; }
 
 /*(768px)*/
 @media (max-width: 768px) {
+  .desktop-only-text { display: none !important; }
+  .mobile-only { display: flex !important; }
+
   section#home {
     flex-direction: column;
     align-items: center;
@@ -109,7 +107,6 @@ section#home video {
 
   /*mobile wrapper*/
   .mobile-only {
-    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -233,29 +230,12 @@ section#home video {
   z-index: 1;
 }
 
-#socials #youtube {
-color: #ff4c4c;
-}
-
-#socials #instagram {
-color: yellow;
-}
-
-#socials #twitter {
-color: grey;
-}
-
-#socials #twitch {
-color: aquamarine;
-}
-
-#socials #reddit {
-color: orange;
-}
-
-#socials #patreon {
-color:blueviolet;
-}
+#socials #youtube { color: #ff4c4c; }
+#socials #instagram { color: yellow; }
+#socials #twitter { color: grey; }
+#socials #twitch { color: aquamarine; }
+#socials #reddit { color: orange; }
+#socials #patreon { color: blueviolet; }
 
 #socials a:hover {
   color: #ff4c4c;
@@ -263,7 +243,7 @@ color:blueviolet;
 }
 
 #socials #heart {
-color: salmon;
+  color: salmon;
 }
 
 /*heartbeat*/
@@ -290,7 +270,7 @@ color: salmon;
     gap: 1.5rem;
   }
 
-  /* FIX 2: make icons appear in 2 rows of 3 */
+  /* make icons appear in 2 rows of 3 */
   #socials .social-icons-fixed a {
     flex: 1 1 calc(33.33% - 1rem);
     text-align: center;
@@ -298,6 +278,23 @@ color: salmon;
 
   #socials a {
     font-size: 2rem;
+  }
+
+  /* FIX 3: allow wrapping for 2x3 grid and bring closer to text */
+  #socials .social-icons-fixed {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  /* FIX 5: bring Rick’s text closer to Sumito line */
+  #socials #new-mobile {
+    margin-top: -0.25rem !important;
+    margin-bottom: 0.25rem !important;
   }
 }
 
@@ -313,25 +310,6 @@ color: salmon;
   align-items: center;
 }
 
-/*mobile adjustment*/
-@media (max-width: 768px) {
-  #socials .social-icons-fixed {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; /* FIX 3: allow wrapping for 2x3 grid */
-    margin-top: 0.5rem; /* FIX 4: bring closer to text */
-    width: 100%;
-  }
-
-  /* FIX 5: bring Rick’s text closer to Sumito line */
-  #socials #new-mobile {
-    margin-top: -0.25rem !important;
-    margin-bottom: 0.25rem !important;
-  }
-}
-
 #youtube a {
   color:#ff4c4c;
 }
@@ -341,37 +319,22 @@ color: salmon;
 }
 
 #plug {
-  font-size: 10px
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {
-#plug {
-  font-size: 5px;
-}
+  #plug {
+    font-size: 5px;
+  }
   #plug a {
     font-size: 5px;
   }
 }
 
+/* Hide/mob helper cleanup - keep existing selectors intact */
 @media (max-width: 768px) {
-#plugin {
-  align-items: center;
-}
-}
-
-/*Hide desktop text on mobile*/
-@media (max-width: 768px) {
-  #mob-only {
-    display: none !important;
-  }
-  }
-}
-
-/*Hide desktop text on mobile*/
-@media (max-width: 768px) {
-  #new-mobile {
-  .desktop-only-text {
-    display: none !important;
-  }
-  }
+  /* ensure desktop-only elements are hidden */
+  .desktop-only-text { display: none !important; }
+  /* ensure mobile-only elements are visible */
+  .mobile-only { display: flex !important; }
 }
