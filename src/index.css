@@ -361,7 +361,7 @@ color: salmon;
 
 /*Hide desktop text on mobile*/
 @media (max-width: 768px) {
-  .mob-only {
+  #mob-only {
     display: none !important;
   }
   }
