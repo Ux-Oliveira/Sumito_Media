@@ -354,8 +354,8 @@ color: salmon;
 }
 
 @media (max-width: 768px) {
-#new-mobile {
-  
+#plugin {
+  align-items: center;
 }
 }
 
