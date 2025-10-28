@@ -334,4 +334,7 @@ color: salmon;
 #plug {
   font-size: 5px;
 }
+  #plug a {
+    font-size: 5px;
+  }
 }
