@@ -166,12 +166,12 @@ export default function Home() {
 
           {/*videos*/}
           <div className="videos-container" style={{ position: "absolute", inset: 0 }}>
-            <video ref={rightRef} src="/../right-slide.mp4" muted playsInline preload="auto" className="video-desktop" style={{ position: "absolute", top: 0, left: "100%", width: "100%", height: "100%", objectFit: "cover", zIndex: 10 }} />
-            <video ref={leftRef} src="/./left-slide.mp4" muted playsInline preload="auto" className="video-desktop" style={{ position: "absolute", top: 0, left: "-100%", width: "100%", height: "100%", objectFit: "cover", zIndex: 9 }} />
+            <video ref={rightRef} src="/right-slide.mp4" muted playsInline preload="auto" className="video-desktop" style={{ position: "absolute", top: 0, left: "100%", width: "100%", height: "100%", objectFit: "cover", zIndex: 10 }} />
+            <video ref={leftRef} src="/left-slide.mp4" muted playsInline preload="auto" className="video-desktop" style={{ position: "absolute", top: 0, left: "-100%", width: "100%", height: "100%", objectFit: "cover", zIndex: 9 }} />
           </div>
 
           {/*mobile video*/}
-          <video src="/public/newvid.mp4" muted playsInline autoPlay loop preload="metadata" className="mobile-video" style={{ display: "none" }} />
+          <video src="/newvid.mp4" muted playsInline autoPlay loop preload="metadata" className="mobile-video" style={{ display: "none" }} />
 
           {/*mobile text*/}
           <div className="mobile-only">
@@ -223,5 +223,6 @@ export default function Home() {
     </main>
   );
 }
+
 
 
