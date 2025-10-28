@@ -203,7 +203,7 @@ export default function Home() {
             <h3 className="desktop-only-text text-2xl font-semibold">
               Sumito Media | Meme Scholar - Vending Machines Aficionado - Father - Husband
             </h3>
-              <h3 id="new-mobile" className="mobile-text text-2xl font-semibold">
+              <h3 id="new-mobile" className="mobile-text mob-only text-2xl font-semibold">
               Sumito Media | Meme Scholar  Vending Machines Aficionado  Father | Husband</h3>
             <h6 id="plug" className="desktop-only-text text-2xl font-semibold">
               Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
@@ -218,7 +218,7 @@ export default function Home() {
             <a href="https://www.instagram.com/sumitomedia/" id="instagram" target="blank" className="text-3xl heartbeat-6"><i className="fab fa-instagram"></i></a>
             <a href="https://sumitomedia.com/" target="blank" id="heart" className="text-2xl mt-2 heartbeat-2"><i className="fa fa-heart"></i></a>
           </div>
-          <h6 id="plug" className="mobile-text-only plugin">
+          <h6 id="plug" className="mobile-text-only mob-only plugin">
               Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
             </h6>
         </div>
@@ -231,6 +231,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
