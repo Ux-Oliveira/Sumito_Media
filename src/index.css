@@ -116,6 +116,13 @@ section#home video {
     padding: 0 1rem;
   }
 
+  .new-mob {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
   .mobile-video {
     display: block !important;
     width: 100%;
