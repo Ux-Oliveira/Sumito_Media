@@ -200,8 +200,11 @@ export default function Home() {
         <img src="/social_background.png" alt="bg" className="absolute inset-0 w-full h-full object-cover blur-lg opacity-10" />
         <div id="monet" className="relative max-w-5xl mx-auto px-6 py-10 flex flex-col items-center z-10">
           <div id="monet" className="text-center mb-6 z-10">
-            <h3 id="new-mobile" className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               Sumito Media | Meme Scholar - Vending Machines Aficionado - Father - Husband
+            </h3>
+              <h3 id="new-mobile" className="text-2xl font-semibold">
+              Sumito Media | Meme Scholar  Vending Machines Aficionado  Father | Husband
             </h3>
             <div id="plug"><h6 id="plug" className="text-2xl font-semibold">
               Website by <a id="heart" href="https://www.youtube.com/@ricksahuman" target="_blank">Rick's a Human</a>
@@ -226,6 +229,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
