@@ -208,7 +208,7 @@ export default function Home() {
             <a href="https://www.youtube.com/@SumitoMedia" target="blank" id="youtube" className="text-3xl heartbeat-1"><i className="fab fa-youtube"></i></a>
             <a href="https://www.twitch.tv/SumitoMedia" id="twitch" target="blank" className="text-3xl heartbeat-2"><i className="fab fa-twitch"></i></a>
             <a href="https://x.com/sumitomedia" id="twitter" target="blank" className="text-3xl heartbeat-3"><i className="fab fa-x-twitter"></i></a>
-            <a href="ttps://www.reddit.com/r/SumitoMedia/" id="reddit" target="blank" className="text-3xl heartbeat-4"><i className="fab fa-reddit"></i></a>
+            <a href="https://www.reddit.com/r/SumitoMedia/" id="reddit" target="blank" className="text-3xl heartbeat-4"><i className="fab fa-reddit"></i></a>
             <a href="https://www.patreon.com/SumitoMedia" id="patreon" target="blank" className="text-3xl heartbeat-5"><i className="fab fa-patreon"></i></a>
             <a href="https://www.instagram.com/sumitomedia/" id="instagram" target="blank" className="text-3xl heartbeat-6"><i className="fab fa-instagram"></i></a>
             <a href="https://sumitomedia.com/" target="blank" id="heart" className="text-2xl mt-2 heartbeat-2"><i className="fa fa-heart"></i></a>
@@ -223,6 +223,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
