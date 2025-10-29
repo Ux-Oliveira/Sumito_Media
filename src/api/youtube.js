@@ -1,7 +1,6 @@
 export default async function handler(req, res) {
-  const channelId = 'UC2gv4MSAlvzjwZ8xXQYtfiQ'; // SumitoMedia's channel ID
-  const apiKey = process.env.YOUTUBE_API_KEY; // Your API key from environment variables
-
+  const channelId = 'UC2gv4MSAlvzjwZ8xXQYtfiQ'; //SumitoMedia's channel ID
+  const apiKey = process.env.YOUTUBE_API_KEY;
   const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id=${channelId}&key=${apiKey}`;
 
   try {
@@ -24,3 +23,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Failed to fetch data from YouTube API' });
   }
 }
+
