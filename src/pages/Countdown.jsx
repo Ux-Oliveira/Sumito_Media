@@ -62,7 +62,7 @@ export default function Countdown() {
             className="w-32 h-32 mx-auto rounded-full border-4 border-white mb-6 shadow-md"
           /></a>
           <h1 id="count" className="text-3xl font-bold mb-6">
-            SumitoMedia Channel Stats
+            Sumito Media
           </h1>
 
           <div className="space-y-6">
@@ -102,3 +102,4 @@ export default function Countdown() {
     </div>
   );
 }
+
